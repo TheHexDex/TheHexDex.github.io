@@ -1,4 +1,4 @@
-import type {Point, LocationInfo} from './../Types'
+import type {Point, LocationInfo, HexInfo, GraphicsInfo} from './../Types'
 import Geomerty from './geometry'
 import RNG from './randomNumbeGenerator'
 
@@ -336,4 +336,20 @@ export default class Mapper{
         return {locations, radius};
     }
 
+
+    static refresh(transformedMons: HexInfo[], graphics: GraphicsInfo) {
+        let mons = transformedMons.map(m => m.location.index)
+        
+        let { locations, radius } = Mapper.GetLocations(mons, graphics.border, window.innerWidth - 2 * graphics.border, graphics.border, window.innerHeight - 2 * graphics.border)
+        
+        graphics.hexRadius = radius
+
+        locations.forEach(newLoc => {
+            let mon = transformedMons.find(mon => mon.location.index == newLoc.index)
+            if (mon == null) {
+                return;
+            }
+            mon.location.coordinates = newLoc.coordinates;
+        })
+    }
 }

@@ -1,5 +1,5 @@
 import type {HexInfo, InfoSettings, PlayStyle} from '../Types'
-import {types, typeNames} from './../utils/monData' 
+import {types, typeNames} from '../utils/monData' 
 
 export default class dominoTracker implements PlayStyle{
 

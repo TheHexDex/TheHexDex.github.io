@@ -1,7 +1,7 @@
 <script lang="ts">
 import {defineComponent} from 'vue'
 import type {PropType} from 'vue'
-import dominoTracker from './../utils/dominoTracker'
+    import dominoTracker from './../trackers/dominoTracker'
 
 export default defineComponent({
   data() {

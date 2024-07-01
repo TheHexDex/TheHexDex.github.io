@@ -47,17 +47,23 @@ export type GraphicsInfo =
   toolTip: boolean;
 }
 
-export type SharableSetttings = 
+export type Settings = 
 {
   includedPokemon: string;
   graphics: GraphicsInfo;
-  map: {type: string,
-    size: number | null,
-    verticalFlip: boolean,
-    horizontalFlip: boolean};
+  map: MapSettings;
   seed: string | null;
   trackerType: string;
   trackerSettings: any;
+}
+
+export type MapSettings =
+{
+    type: string,
+    size: number | null,
+    verticalFlip: boolean,
+    horizontalFlip: boolean,
+    seed: string | null
 }
 
 export type ZombieStats = 
@@ -72,4 +78,14 @@ export type InfoSettings =
   showStats: boolean;
   statsLocation: string;
   statscolor: string;
+}
+
+export enum SettingsFrames {
+  Inital,
+  Settings,
+  Mons,
+  Map,
+  Game,
+  Graphics,
+  Finalize
 }

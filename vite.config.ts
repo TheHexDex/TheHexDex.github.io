@@ -22,5 +22,6 @@ export default defineConfig({
         classic: resolve(__dirname, 'classic.html'),
       },
     }
-  }
+  },
+  base: "/REPONAME/"
 })

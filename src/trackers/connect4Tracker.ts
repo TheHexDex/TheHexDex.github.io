@@ -1,5 +1,5 @@
 import type {HexInfo, PlayStyle} from '../Types'
-import Random from './randomNumbeGenerator'
+import Random from '../utils/randomNumbeGenerator'
 
 
 export default class connect4 implements PlayStyle{

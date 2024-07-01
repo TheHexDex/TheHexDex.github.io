@@ -1,6 +1,6 @@
 import {HexInfo} from '../Types'
 import type {PlayStyle, ZombieStats, InfoSettings} from '../Types'
-import Geomerty from './geometry'
+import Geomerty from '../utils/geometry'
 
 export default class adjacentTracker implements PlayStyle{
 
