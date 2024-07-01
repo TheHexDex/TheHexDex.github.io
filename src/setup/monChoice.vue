@@ -87,8 +87,8 @@ export default defineComponent({
         </div>
         <input v-model="settings.includedPokemon" />
         <p>
-            Type the national dex numbers of the Pok�mon you would like to track. You can list ranges and individual
-            Pok�mon
+            Type the national dex numbers of the Pokémon you would like to track. You can list ranges and individual
+            Pokémon
             seperated by commas. e.g. "1-3, 5, 7-12, 15".
         </p>
         <br>

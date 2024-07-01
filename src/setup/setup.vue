@@ -87,11 +87,6 @@ export default defineComponent({
 
                 this.$emit('setup-complete')
              
- 
-
-
-
- 
         },
 
         async LoadSettings() {
@@ -157,7 +152,6 @@ export default defineComponent({
             }
 
         },
-
 
         MonsComplete(mons: number[]) {
             this.includedMons = mons;
@@ -278,7 +272,6 @@ export default defineComponent({
         padding: 15px 30px;
         margin: 20px;
     }
-
 
     input {
         vertical-align: middle;
